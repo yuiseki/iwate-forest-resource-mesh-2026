@@ -117,6 +117,7 @@ def test_low_coverage_lists_big_gaps_only():
         {"group": "B市", "cells": 1000, "林種": 990},
         {"group": "C町", "cells": 10, "林種": 0},
         {"group": "<NULL>", "cells": 5000, "林種": 0},
+        {"group": "<NULL> / <NULL>", "cells": 5000, "林種": 10},
     ]
     got = rfm.low_coverage(rows, "林種", min_cells=100, below=0.9)
     assert [g["group"] for g in got] == [
@@ -153,3 +154,30 @@ def test_the_repo_directory_matches_its_prefecture():
     if root.name.startswith("_template"):
         pytest.skip("the template has no prefecture of its own")
     assert root.name == rfm.PREF.repo
+
+
+def test_conform_gives_every_sheet_the_same_types():
+    import datetime
+
+    import pyarrow as pa
+
+    # an all-NULL sheet arrives with the NULL type, a sheet with values with the date type
+    full = pa.table({"計測年月日": pa.array([datetime.date(2022, 8, 1)], pa.date32()),
+                     "layer_ownership": pa.array(["民有林"]), "林齢": pa.array([3.0]),
+                     "extra": pa.array([1])})  # fmt: skip
+    empty = pa.table({"計測年月日": pa.nulls(1), "layer_ownership": pa.nulls(1), "林齢": pa.array([None], pa.float64()),
+                      "extra": pa.array([1])})  # fmt: skip
+    a, b = rfm.conform(full), rfm.conform(empty)
+    assert a.schema.types == b.schema.types
+    assert a.schema.field("計測年月日").type == pa.date32()
+    assert a.schema.field("layer_ownership").type == pa.large_string()
+    assert a.schema.field("extra").type == pa.int64()  # columns outside the table are left alone
+    assert b.column("計測年月日").null_count == 1
+    assert a.column("計測年月日").to_pylist() == [datetime.date(2022, 8, 1)]
+
+
+def test_conform_keeps_the_schema_metadata():
+    import pyarrow as pa
+
+    t = pa.table({"layer_ownership": pa.nulls(2)}).replace_schema_metadata({b"geo": b"{}"})
+    assert rfm.conform(t).schema.metadata == {b"geo": b"{}"}

@@ -1,0 +1,439 @@
+{
+ "cutter": "KSJ N03 20260101 03 (Iwate), 8224 polygons, not dissolved",
+ "sheets": {
+  "10IE4": {
+   "read": 750000,
+   "kept": 235791,
+   "no_layer_polygon": 73513,
+   "cells_in_several_layer_polygons": 0
+  },
+  "10IF2": {
+   "read": 357350,
+   "kept": 74788,
+   "no_layer_polygon": 23802,
+   "cells_in_several_layer_polygons": 92
+  },
+  "10IF3": {
+   "read": 750000,
+   "kept": 505634,
+   "no_layer_polygon": 149169,
+   "cells_in_several_layer_polygons": 42
+  },
+  "10IF4": {
+   "read": 707995,
+   "kept": 665966,
+   "no_layer_polygon": 144640,
+   "cells_in_several_layer_polygons": 280
+  },
+  "10IG3": {
+   "read": 30747,
+   "kept": 30747,
+   "no_layer_polygon": 11497,
+   "cells_in_several_layer_polygons": 73
+  },
+  "10JE1": {
+   "read": 750000,
+   "kept": 411735,
+   "no_layer_polygon": 34296,
+   "cells_in_several_layer_polygons": 638
+  },
+  "10JE2": {
+   "read": 750000,
+   "kept": 734539,
+   "no_layer_polygon": 193163,
+   "cells_in_several_layer_polygons": 759
+  },
+  "10JE3": {
+   "read": 750000,
+   "kept": 666043,
+   "no_layer_polygon": 71408,
+   "cells_in_several_layer_polygons": 1293
+  },
+  "10JE4": {
+   "read": 750000,
+   "kept": 750000,
+   "no_layer_polygon": 217094,
+   "cells_in_several_layer_polygons": 1217
+  },
+  "10JF1": {
+   "read": 750000,
+   "kept": 750000,
+   "no_layer_polygon": 157286,
+   "cells_in_several_layer_polygons": 1146
+  },
+  "10JF2": {
+   "read": 750000,
+   "kept": 750000,
+   "no_layer_polygon": 124826,
+   "cells_in_several_layer_polygons": 696
+  },
+  "10JF3": {
+   "read": 750000,
+   "kept": 750000,
+   "no_layer_polygon": 107274,
+   "cells_in_several_layer_polygons": 869
+  },
+  "10JF4": {
+   "read": 750000,
+   "kept": 750000,
+   "no_layer_polygon": 47467,
+   "cells_in_several_layer_polygons": 3262
+  },
+  "10JG1": {
+   "read": 187594,
+   "kept": 187594,
+   "no_layer_polygon": 45053,
+   "cells_in_several_layer_polygons": 240
+  },
+  "10JG3": {
+   "read": 295307,
+   "kept": 295307,
+   "no_layer_polygon": 54590,
+   "cells_in_several_layer_polygons": 915
+  },
+  "10KD2": {
+   "read": 750000,
+   "kept": 17466,
+   "no_layer_polygon": 476,
+   "cells_in_several_layer_polygons": 0
+  },
+  "10KD4": {
+   "read": 750000,
+   "kept": 87135,
+   "no_layer_polygon": 667,
+   "cells_in_several_layer_polygons": 52
+  },
+  "10KE1": {
+   "read": 750000,
+   "kept": 669905,
+   "no_layer_polygon": 147063,
+   "cells_in_several_layer_polygons": 308
+  },
+  "10KE2": {
+   "read": 750000,
+   "kept": 750000,
+   "no_layer_polygon": 365100,
+   "cells_in_several_layer_polygons": 623
+  },
+  "10KE3": {
+   "read": 750000,
+   "kept": 744579,
+   "no_layer_polygon": 159903,
+   "cells_in_several_layer_polygons": 903
+  },
+  "10KE4": {
+   "read": 750000,
+   "kept": 750000,
+   "no_layer_polygon": 324613,
+   "cells_in_several_layer_polygons": 376
+  },
+  "10KF1": {
+   "read": 750000,
+   "kept": 750000,
+   "no_layer_polygon": 107290,
+   "cells_in_several_layer_polygons": 1186
+  },
+  "10KF2": {
+   "read": 750000,
+   "kept": 750000,
+   "no_layer_polygon": 47729,
+   "cells_in_several_layer_polygons": 1531
+  },
+  "10KF3": {
+   "read": 750000,
+   "kept": 750000,
+   "no_layer_polygon": 52783,
+   "cells_in_several_layer_polygons": 1620
+  },
+  "10KF4": {
+   "read": 750000,
+   "kept": 750000,
+   "no_layer_polygon": 48831,
+   "cells_in_several_layer_polygons": 929
+  },
+  "10KG1": {
+   "read": 596574,
+   "kept": 596574,
+   "no_layer_polygon": 78381,
+   "cells_in_several_layer_polygons": 1437
+  },
+  "10KG3": {
+   "read": 700822,
+   "kept": 700822,
+   "no_layer_polygon": 77493,
+   "cells_in_several_layer_polygons": 847
+  },
+  "10KG4": {
+   "read": 398,
+   "kept": 398,
+   "no_layer_polygon": 100,
+   "cells_in_several_layer_polygons": 0
+  },
+  "10LD2": {
+   "read": 750000,
+   "kept": 82428,
+   "no_layer_polygon": 1330,
+   "cells_in_several_layer_polygons": 140
+  },
+  "10LD4": {
+   "read": 750000,
+   "kept": 329657,
+   "no_layer_polygon": 26259,
+   "cells_in_several_layer_polygons": 231
+  },
+  "10LE1": {
+   "read": 750000,
+   "kept": 750000,
+   "no_layer_polygon": 227748,
+   "cells_in_several_layer_polygons": 1803
+  },
+  "10LE2": {
+   "read": 750000,
+   "kept": 750000,
+   "no_layer_polygon": 402851,
+   "cells_in_several_layer_polygons": 244
+  },
+  "10LE3": {
+   "read": 750000,
+   "kept": 750000,
+   "no_layer_polygon": 34129,
+   "cells_in_several_layer_polygons": 4881
+  },
+  "10LE4": {
+   "read": 750000,
+   "kept": 750000,
+   "no_layer_polygon": 408908,
+   "cells_in_several_layer_polygons": 1882
+  },
+  "10LF1": {
+   "read": 750000,
+   "kept": 750000,
+   "no_layer_polygon": 46883,
+   "cells_in_several_layer_polygons": 1854
+  },
+  "10LF2": {
+   "read": 750000,
+   "kept": 750000,
+   "no_layer_polygon": 38778,
+   "cells_in_several_layer_polygons": 469
+  },
+  "10LF3": {
+   "read": 750000,
+   "kept": 750000,
+   "no_layer_polygon": 47499,
+   "cells_in_several_layer_polygons": 1706
+  },
+  "10LF4": {
+   "read": 750000,
+   "kept": 750000,
+   "no_layer_polygon": 39462,
+   "cells_in_several_layer_polygons": 1388
+  },
+  "10LG1": {
+   "read": 681361,
+   "kept": 681361,
+   "no_layer_polygon": 99139,
+   "cells_in_several_layer_polygons": 265
+  },
+  "10LG2": {
+   "read": 40206,
+   "kept": 40206,
+   "no_layer_polygon": 4504,
+   "cells_in_several_layer_polygons": 27
+  },
+  "10LG3": {
+   "read": 724717,
+   "kept": 724717,
+   "no_layer_polygon": 63831,
+   "cells_in_several_layer_polygons": 1008
+  },
+  "10LG4": {
+   "read": 138997,
+   "kept": 138997,
+   "no_layer_polygon": 7181,
+   "cells_in_several_layer_polygons": 528
+  },
+  "10MD2": {
+   "read": 750000,
+   "kept": 493963,
+   "no_layer_polygon": 70166,
+   "cells_in_several_layer_polygons": 645
+  },
+  "10MD4": {
+   "read": 750001,
+   "kept": 290077,
+   "no_layer_polygon": 29183,
+   "cells_in_several_layer_polygons": 434
+  },
+  "10ME1": {
+   "read": 750000,
+   "kept": 750000,
+   "no_layer_polygon": 157401,
+   "cells_in_several_layer_polygons": 978
+  },
+  "10ME2": {
+   "read": 750000,
+   "kept": 750000,
+   "no_layer_polygon": 505122,
+   "cells_in_several_layer_polygons": 1237
+  },
+  "10ME3": {
+   "read": 750000,
+   "kept": 750000,
+   "no_layer_polygon": 262050,
+   "cells_in_several_layer_polygons": 664
+  },
+  "10ME4": {
+   "read": 750000,
+   "kept": 750000,
+   "no_layer_polygon": 487038,
+   "cells_in_several_layer_polygons": 338
+  },
+  "10MF1": {
+   "read": 750000,
+   "kept": 750000,
+   "no_layer_polygon": 145110,
+   "cells_in_several_layer_polygons": 2057
+  },
+  "10MF2": {
+   "read": 750000,
+   "kept": 750000,
+   "no_layer_polygon": 135172,
+   "cells_in_several_layer_polygons": 2024
+  },
+  "10MF3": {
+   "read": 750000,
+   "kept": 750000,
+   "no_layer_polygon": 135599,
+   "cells_in_several_layer_polygons": 2225
+  },
+  "10MF4": {
+   "read": 750000,
+   "kept": 750000,
+   "no_layer_polygon": 99742,
+   "cells_in_several_layer_polygons": 2134
+  },
+  "10MG1": {
+   "read": 638179,
+   "kept": 638158,
+   "no_layer_polygon": 85045,
+   "cells_in_several_layer_polygons": 2381
+  },
+  "10MG2": {
+   "read": 39195,
+   "kept": 39195,
+   "no_layer_polygon": 3327,
+   "cells_in_several_layer_polygons": 259
+  },
+  "10MG3": {
+   "read": 501608,
+   "kept": 501608,
+   "no_layer_polygon": 69508,
+   "cells_in_several_layer_polygons": 103
+  },
+  "10ND2": {
+   "read": 750000,
+   "kept": 190409,
+   "no_layer_polygon": 1945,
+   "cells_in_several_layer_polygons": 0
+  },
+  "10ND4": {
+   "read": 750000,
+   "kept": 116483,
+   "no_layer_polygon": 1256,
+   "cells_in_several_layer_polygons": 0
+  },
+  "10NE1": {
+   "read": 750000,
+   "kept": 750000,
+   "no_layer_polygon": 240904,
+   "cells_in_several_layer_polygons": 998
+  },
+  "10NE2": {
+   "read": 750000,
+   "kept": 750000,
+   "no_layer_polygon": 491123,
+   "cells_in_several_layer_polygons": 289
+  },
+  "10NE3": {
+   "read": 750000,
+   "kept": 714906,
+   "no_layer_polygon": 130583,
+   "cells_in_several_layer_polygons": 1008
+  },
+  "10NE4": {
+   "read": 750000,
+   "kept": 750000,
+   "no_layer_polygon": 382316,
+   "cells_in_several_layer_polygons": 362
+  },
+  "10NF1": {
+   "read": 750000,
+   "kept": 750000,
+   "no_layer_polygon": 132090,
+   "cells_in_several_layer_polygons": 2401
+  },
+  "10NF2": {
+   "read": 745008,
+   "kept": 745008,
+   "no_layer_polygon": 111126,
+   "cells_in_several_layer_polygons": 2246
+  },
+  "10NF3": {
+   "read": 750000,
+   "kept": 676991,
+   "no_layer_polygon": 246757,
+   "cells_in_several_layer_polygons": 887
+  },
+  "10NF4": {
+   "read": 525172,
+   "kept": 332828,
+   "no_layer_polygon": 108268,
+   "cells_in_several_layer_polygons": 738
+  },
+  "10NG1": {
+   "read": 342595,
+   "kept": 342595,
+   "no_layer_polygon": 46027,
+   "cells_in_several_layer_polygons": 71
+  },
+  "10NG3": {
+   "read": 44891,
+   "kept": 44891,
+   "no_layer_polygon": 7678,
+   "cells_in_several_layer_polygons": 0
+  },
+  "10OE1": {
+   "read": 750000,
+   "kept": 95030,
+   "no_layer_polygon": 25051,
+   "cells_in_several_layer_polygons": 175
+  },
+  "10OE2": {
+   "read": 750000,
+   "kept": 575543,
+   "no_layer_polygon": 309733,
+   "cells_in_several_layer_polygons": 123
+  },
+  "10OE4": {
+   "read": 750000,
+   "kept": 42304,
+   "no_layer_polygon": 30887,
+   "cells_in_several_layer_polygons": 0
+  },
+  "10OF1": {
+   "read": 749170,
+   "kept": 463715,
+   "no_layer_polygon": 174956,
+   "cells_in_several_layer_polygons": 271
+  },
+  "10OF3": {
+   "read": 682730,
+   "kept": 3163,
+   "no_layer_polygon": 121,
+   "cells_in_several_layer_polygons": 0
+  }
+ },
+ "layer_polygons": 13823,
+ "rows": 38179256
+}

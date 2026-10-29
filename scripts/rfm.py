@@ -188,11 +188,13 @@ def beech_oak_statement(hits: dict) -> str:
 
 
 def low_coverage(rows: list[dict], col: str, min_cells: int, below: float) -> list[dict]:
-    """Municipality (or other group) rows whose share of non-NULL `col` is below `below`; NULL group and tiny groups are left out."""
+    """Municipality (or other group) rows whose share of non-NULL `col` is below `below`; groups whose name starts with <NULL> (cells in no layer polygon) and tiny groups are left out."""
     out = [
         r
         for r in rows
-        if r["group"] != "<NULL>" and r["cells"] >= min_cells and r[col] / r["cells"] < below
+        if not r["group"].startswith("<NULL>")
+        and r["cells"] >= min_cells
+        and r[col] / r["cells"] < below
     ]
     return sorted(out, key=lambda r: r[col] / r["cells"])
 
@@ -207,3 +209,24 @@ def layer_name(gpkg: Path, preferred: str) -> str:
     if len(names) == 1:
         return names[0]
     raise SystemExit(f"{gpkg}: cannot choose a layer among {names}")
+
+
+def conform(table):
+    """Give the columns that vary with the content of a sheet one fixed type, so that every sheet of the
+    series has the same schema: an all-NULL column arrives from the reader with the NULL type, a column
+    with values with its real type (計測年月日 is a date in the source). Other columns are left alone."""
+    import pyarrow as pa
+
+    fixed = {
+        "計測年月日": pa.date32(),
+        "レーザ解析樹種": pa.large_string(),
+        "layer_ownership": pa.large_string(),
+        "layer_municipality_code5": pa.large_string(),
+        "layer_municipality_name": pa.large_string(),
+        "林齢": pa.float64(),
+        "樹冠高": pa.float64(),
+        "立木密度": pa.float64(),
+        "平均標高": pa.float64(),
+    }
+    fields = [pa.field(f.name, fixed.get(f.name, f.type), f.nullable) for f in table.schema]
+    return table.cast(pa.schema(fields, metadata=table.schema.metadata))
